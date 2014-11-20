@@ -2,5 +2,5 @@
 <a href="{{ socialUrl }}"
 {%- for key, attribute in attributes %}
  {{ key }}="{{ attribute }}"
-{%- endfor %}>{{ linkText }}</a>
+{%- endfor %}>{{ linkText | raw('html') }}</a>
 {% endspaceless %}
